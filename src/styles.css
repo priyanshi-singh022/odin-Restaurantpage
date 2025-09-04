@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: green;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(240, 255, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header button {
+    margin-left: 20px;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: rgb(13, 100, 5);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    color: red;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+#hero-sec {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: top;
+    align-items: left;
+    flex-direction: column;
+    padding: 50px 30px;
+    position: relative;
+    gap: 20px;
+    z-index: -1;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    margin-top: -100px;
+}
+
+#hero-sec h1{
+    font-size: 50px;
+    font-family: "WindSong", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#hero-sec p {
+    font-size: 22px;
+    width: 40%;
+}
+
+#service-sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -95px;
+}
+
+.service {
+    width: 280px;
+    height: 180px;
+    background-color: rgb(255, 246, 246);
+    margin: 0;
+    overflow: hidden;
+    font-size: 22px;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 2px solid rgb(253, 52, 52);
+    color: rgb(250, 99, 99);
+
+}
+
+#menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#menu h2, #Contact h2 {
+    font-size: 55px;
+    color: green;
+    font-family: "WindSong", cursive;
+  font-weight: 800;
+  font-style: normal;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 30px;
+}
+
+.menubox {
+    width: 400px;
+    height: 380px;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    box-shadow: inset; 
+    border-radius: 30px;
+}
+
+.menu1 { 
+    box-shadow: 0 4px 8px rgba(228, 228, 27, 0.973);
+    background-color: rgba(253, 253, 247, 0.973);
+}
+
+.menu2 {
+    
+    box-shadow: 0 4px 8px rgba(255, 131, 86, 0.979);
+    background-color: rgba(255, 250, 250, 0.979);
+}
+
+.menu3 {
+   
+    box-shadow: 0 4px 8px rgb(130, 239, 253);
+    background-color: rgb(247, 254, 255);
+}
+
+.menu4 {
+    
+    box-shadow: 0 4px 8px rgb(66, 214, 66);
+    background-color: rgb(246, 252, 246);
+}
+
+
+ul {
+    color: rgb(13, 100, 5);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+ul li {
+    font-size: 20px !important;
+    list-style: none;
+}
+
+.menu1 li {
+    list-style: "🍹";
+}
+
+.menu2 li {
+    list-style: "🌮 ";
+}
+
+.menu3 li {
+    list-style: "🧁 ";
+}
+
+.menu4 li {
+    list-style: "🫔 ";
+}
+
+#Contact {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.dish-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+#Contact ul {
+    color: rgb(253, 52, 52);
+    font-size: 45px;
+    border: 1px solid rgb(253, 52, 52);
+    padding: 40px;
+    box-shadow: 2px 4px 8px rgb(253, 52, 52);
+    border-radius: 30px;
+}
