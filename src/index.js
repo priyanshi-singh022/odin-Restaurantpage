@@ -1,6 +1,9 @@
 import "./styles.css";
 import vegesImg from "./Images/pasta-spaghetti-vegetables-spices-isolated-white.jpg"
 import tunadish from "./Images/tuna-salad.jpg"
+import pageLoad from "./pageload.js"
+
+pageLoad();
 
 
 // hero section 
