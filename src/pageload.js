@@ -1,11 +1,11 @@
 import loadHome from './home.js';
 import loadMenu from "./menu.js";
-import loadContact from "./contact.js";
+import loadContact from "./contact.js"
 
 function pageLoad() {
     const content = document.getElementById('content');
 
-    // navbar 
+    //navbar 
     const header = document.createElement('header');
     const nav = document.createElement('nav');
 
@@ -26,22 +26,20 @@ function pageLoad() {
     });
 
     const contactBtn = document.createElement('button');
-    contactBtn.textContent = 'Contact';
+    contactBtn.textContent = 'contact';
     contactBtn.addEventListener('click', () => {
         content.innerHTML = '';
         content.appendChild(header);
         loadContact();
     });
 
-    nav.appendChild(homeBtn);
-    nav.appendChild(menuBtn);
-    nav.appendChild(contactBtn);
-    header.appendChild(nav);
 
-    // Add header once
-    content.appendChild(header);
+  nav.appendChild(homeBtn);
+  nav.appendChild(menuBtn);
+  nav.appendChild(contactBtn);
+  header.appendChild(nav);
 
-    loadHome();
+  content.appendChild(header);
+
 }
-
 export default pageLoad;
