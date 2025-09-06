@@ -7,7 +7,7 @@ function loadContact() {
   contact.id = 'Contact';
 
   const h2 = document.createElement('h2');
-  h2.textContent = 'Reach Out To Us Now';
+  h2.textContent = 'We are waiting for you';
 
   const ul = document.createElement('ul');
   const number = document.createElement('li');
