@@ -3,6 +3,13 @@ import vegesImg from './Images/pasta-spaghetti-vegetables-spices-isolated-white.
 function loadHome() {
     const content = document.getElementById('content');
 
+    // 🔥 cleanup: remove hero and services if they already exist
+    const oldHero = document.getElementById('hero-sec');
+    if (oldHero) oldHero.remove();
+
+    const oldServices = document.getElementById('service-sec');
+    if (oldServices) oldServices.remove();
+
     // Hero
     const hero = document.createElement('div');
     hero.id = 'hero-sec';
@@ -18,6 +25,7 @@ function loadHome() {
     const p = document.createElement('p');
     p.textContent =
         'Where every meal is made with love and every guest is family. Enjoy fresh ingredients, cozy vibes, and flavors that bring people together. Sit back, relax, and let us serve you happiness on a plate. 🍽️';
+
     hero.appendChild(img);
     hero.appendChild(h1);
     hero.appendChild(p);
