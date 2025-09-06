@@ -35,10 +35,9 @@ function pageLoad() {
     nav.appendChild(contactBtn);
     header.appendChild(nav);
 
-    // append header once
     content.appendChild(header);
 
-    // load Home only ONCE here
+
     loadHome();
 }
 

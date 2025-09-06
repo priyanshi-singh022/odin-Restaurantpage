@@ -3,7 +3,7 @@ import vegesImg from './Images/pasta-spaghetti-vegetables-spices-isolated-white.
 function loadHome() {
     const content = document.getElementById('content');
 
-    // 🔥 cleanup: remove hero and services if they already exist
+    // cleanup: remove hero and services if they already exist
     const oldHero = document.getElementById('hero-sec');
     if (oldHero) oldHero.remove();
 
